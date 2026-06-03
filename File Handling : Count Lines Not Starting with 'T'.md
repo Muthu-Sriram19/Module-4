@@ -12,8 +12,29 @@ To write a Python program that counts the number of lines in a text file `story.
 4. After processing all lines, print the `count` value, which represents the number of lines that do not start with `'T'`.
 
 ## 🧾 Program
-Add code here
+```
+
+def create_file(file_path, content):
+    with open(file_path, 'w') as file:
+        file.write(content)
+
+
+def merge_files(file1_path, file2_path, output_file_path):
+    f1=open(file1_path,"r")
+    f2=open(file2_path,"r")
+    f3=open(output_file_path,"w")
+    f3.write(f1.read())
+    f3.write(f2.read())
+    
+
+
+def read_file(file_path):
+    with open(file_path, 'r') as file:
+        return file.read()
+```
 
 ## Output
+<img width="1320" height="622" alt="Screenshot 2025-09-13 232058" src="https://github.com/user-attachments/assets/ce827dff-047e-4c87-9948-6ee0147e989a" />
 
 ## Result
+Thus, the program to merge two files into a third file using File Handling in Python was executed successfully
